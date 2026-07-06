@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>柳黎明 · 简历</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .page {
+    max-width: 820px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0,.08);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  /* 头部 */
+  .header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    padding: 36px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .header h1 { font-size: 32px; font-weight: 700; letter-spacing: 2px; }
+  .header .subtitle { font-size: 14px; opacity: .8; margin-top: 4px; }
+  .header .contact { text-align: right; font-size: 14px; line-height: 2; }
+  .header .contact a { color: #a8d8ff; text-decoration: none; }
+  /* 区块 */
+  .section { padding: 28px 48px; border-bottom: 1px solid #eee; }
+  .section:last-child { border: none; }
+  .section h2 {
+    font-size: 18px;
+    color: #0f3460;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0f3460;
+    display: inline-block;
+    letter-spacing: 2px;
+  }
+  /* 技能标签 */
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag {
+    background: #e8f0fe;
+    color: #1a3a6b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  /* 条目 */
+  .entry { margin-bottom: 20px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+  .entry-title { font-weight: 600; font-size: 16px; color: #1a1a2e; }
+  .entry-sub { font-size: 14px; color: #555; }
+  .entry-date { font-size: 13px; color: #888; white-space: nowrap; }
+  .entry-desc { font-size: 14px; color: #555; }
+  .entry-desc ul { padding-left: 20px; }
+  .entry-desc li { margin-bottom: 4px; }
+  .entry-desc li::marker { color: #0f3460; }
+  /* 项目 */
+  .project { margin-bottom: 24px; padding-left: 16px; border-left: 3px solid #0f3460; }
+  .project:last-child { margin-bottom: 0; }
+  .project h3 { font-size: 15px; font-weight: 600; color: #1a1a2e; margin-bottom: 4px; }
+  .project .meta { font-size: 13px; color: #888; margin-bottom: 6px; }
+  .project .desc { font-size: 14px; color: #555; margin-bottom: 6px; }
+  .project ul { padding-left: 20px; font-size: 14px; color: #555; }
+  .project li { margin-bottom: 2px; }
+  .project li::marker { color: #0f3460; }
+  /* 响应式 */
+  @media (max-width: 640px) {
+    .page { margin: 0; border-radius: 0; }
+    .header { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+    .header .contact { text-align: left; }
+    .section { padding: 20px; }
+    .entry-header { flex-direction: column; }
+  }
+  @media print {
+    body { background: #fff; }
+    .page { max-width: 100%; margin: 0; box-shadow: none; border-radius: 0; }
+    .header { background: #1a1a2e !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <!-- 头部 -->
+  <div class="header">
+    <div>
+      <h1>柳黎明</h1>
+      <div class="subtitle">杭州图为科技有限公司 · 研发部3D项目组负责人</div>
+      <div class="subtitle">出生：1988/10</div>
+    </div>
+    <div class="contact">
+      <div>📞 15068774027</div>
+      <div>📧 <a href="mailto:758185271@qq.com">758185271@qq.com</a></div>
+    </div>
+  </div>
+
+  <!-- 教育经历 -->
+  <div class="section">
+    <h2>教育经历</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">中国计量大学</span>
+        <span class="entry-date">2011.09 — 2014.06</span>
+      </div>
+      <div class="entry-sub">检测技术与自动化装置 · 硕士</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">洛阳师范学院</span>
+        <span class="entry-date">2007.09 — 2011.06</span>
+      </div>
+      <div class="entry-sub">物理学 · 本科</div>
+    </div>
+  </div>
+
+  <!-- 工作技能 -->
+  <div class="section">
+    <h2>工作技能</h2>
+    <div class="skills">
+      <span class="skill-tag">C++ 桌面软件开发</span>
+      <span class="skill-tag">CAD 开发流程</span>
+      <span class="skill-tag">CGAL / Geometry Tools</span>
+      <span class="skill-tag">OpenGL / OptiX 渲染</span>
+      <span class="skill-tag">物理渲染</span>
+      <span class="skill-tag">Python / TypeScript / Ruby</span>
+      <span class="skill-tag">MFC / Qt / PyQt</span>
+      <span class="skill-tag">设计模式</span>
+      <span class="skill-tag">Swift (iOS 原生)</span>
+      <span class="skill-tag">Vue (原型验证)</span>
+      <span class="skill-tag">BSpline / Mesh 算法</span>
+      <span class="skill-tag">CUDA</span>
+      <span class="skill-tag">分布式渲染</span>
+    </div>
+  </div>
+
+  <!-- 工作经历 -->
+  <div class="section">
+    <h2>工作经历</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">杭州图为科技有限公司</span>
+        <span class="entry-date">2015.06 — 2021.09</span>
+      </div>
+      <div class="entry-sub">C++开发 / 桌面软件架构 · 研发部3D项目组负责人</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">浙大 CAD 张东亮教授项目组</span>
+        <span class="entry-date">2014.06 — 2015.06</span>
+      </div>
+      <div class="entry-sub">C++ 开发工程师</div>
+    </div>
+  </div>
+
+  <!-- 项目经历 -->
+  <div class="section">
+    <h2>项目经历</h2>
+
+    <div class="project">
+      <h3>项目1：时尚设计师软件</h3>
+      <div class="meta">2020.09 — 至今 · 技术负责人</div>
+      <div class="desc">方便服装设计师快速设计衣服并查看效果的桌面软件。</div>
+      <ul>
+        <li>基于 Qt 搭建软件框架：渲染引擎接口、Undo/Redo 机制、序列化机制、模拟引擎接口、数据存储、单元测试框架</li>
+        <li>数据结构设计：Vertex、Line、Pattern、Mesh 等</li>
+        <li>独立完成几何库：BSpline 算法、半边结构 Mesh 设计与算法、网格化封装与改进、网格简化</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>项目2：王华民教授 SIGGRAPH 论文技术支持</h3>
+      <div class="meta">2020.10 — 2021.03 · 团队负责人</div>
+      <div class="desc">为 SIGGRAPH 论文顺利录用提供技术团队支持。</div>
+      <ul>
+        <li>CPU 版本 Mesh 转换为 GPU 版本 Mesh</li>
+        <li>CUDA 版本基础数学计算</li>
+        <li>人体骨骼动画驱动衣服模拟生成原始网格</li>
+        <li>搭建云渲染服务器并渲染所有帧数据</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>项目3：USCAD 多套虚拟服装模拟渲染系统</h3>
+      <div class="meta">2015.07 — 至今 · 软件开发组组长</div>
+      <div class="desc">为虚拟服装产业快速生成大量服装模型并渲染的系统，集纸样制版、缝合关系建立、3D快速生成、2D/3D映射、多款式组合生成、混合渲染等功能。</div>
+      <ul>
+        <li>2D 编辑功能、2D 三角化算法实现</li>
+        <li>2D 网格到 3D 网格的映射算法</li>
+        <li>3D 模拟交互开发</li>
+        <li>纹理对齐、镜像、拉伸算法与界面交互</li>
+        <li>资源管理器设计（场景/纹理/包边厚度/刚体资源）</li>
+        <li>在架构师框架下带领组员完成整体开发</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>项目4：Style3D 单套服装模拟显示软件</h3>
+      <div class="meta">2014.06 — 2015.07 · 开发工程师</div>
+      <div class="desc">设计师完成打版、模拟及渲染的桌面软件。</div>
+      <ul>
+        <li>MFC + Physx 物理引擎进行布料模拟</li>
+        <li>不同片网格之间的缝合关系处理</li>
+        <li>网格自碰撞关系处理</li>
+        <li>模拟后期网格处理：厚度、包边等效果</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 工具链 -->
+  <div class="section">
+    <h2>工具链项目</h2>
+
+    <div class="project">
+      <h3>MeasureToMade 服装订制软件</h3>
+      <div class="meta">C++ · 自主研发版型模拟引擎</div>
+      <div class="desc">根据客户身材快速生成合适版型，核心亮点在于解决罩杯等疑难部位的自动改版与版式库自动匹配。</div>
+      <ul>
+        <li>数据结构设计及编码</li>
+        <li>2D 交互功能实现</li>
+        <li>部分尺码变形算法实现</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Web 端 BodyDeform 身材变形工具</h3>
+      <div class="meta">Vue + Babylon.js + C++ 后端</div>
+      <div class="desc">修改人体模型尺寸的客户端工具。</div>
+      <ul>
+        <li>前端采用 Vue + Babylon 渲染引擎</li>
+        <li>后端 C++ 中间层接口与底层身材变形算法</li>
+        <li>变形模型存储服务器实现快速加载</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>OptixRender 渲染器</h3>
+      <div class="meta">OptiX 框架</div>
+      <div class="desc">为验证物理渲染算法在 Optix 框架下实现的渲染器。</div>
+      <ul>
+        <li>混合渲染实现</li>
+        <li>快速出图功能</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 自我评价 -->
+  <div class="section">
+    <h2>自我评价</h2>
+    <div class="entry-desc">
+      <p>擅长解决桌面软件开发中的工程问题，并能高效地与产品、UI 设计、开发工程师以及测试工程师沟通问题。对新技术保持热情，不断学习以保持程序员对技术的敏感性。喜欢浏览各种开源 3D 项目源代码，如 Meshlab、FreeCAD、VTK 等。</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
